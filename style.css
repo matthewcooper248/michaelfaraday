@@ -1,0 +1,255 @@
+/*
+fonts: 'Cormorant Garamond', 'Pinyon Script', 'Charm'
+*/
+/*
+-----------------------------------------------------
+mobile first-----------------------------------------
+-----------------------------------------------------
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    --light-green: #B9BF5C;
+    --medium-green: #5A661F;
+    --dark-green: #1D2C0D;
+    --light-brown: #F5E283;
+    --medium-brown: #B29633;
+    --dark-brown: #301901;
+    font-size: 10px;
+    font-family: 'Cormorant Garamond', serif;
+}
+body {
+    font-size: 1.6rem;
+    background: linear-gradient(45deg, var(--medium-brown), var(--light-brown)) no-repeat fixed;
+}
+main {
+    
+}
+ul li {
+    list-style: none;
+}
+div, header, #title-container,
+h1, p, nav, ul, li,
+main, #splash, figure,
+img, figcaption, #bio,
+h2, h3, section, footer {
+    display: block;
+    width: 100%;
+}
+header {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(45deg, var(--dark-brown), var(--medium-brown));
+    color: var(--light-brown);
+}
+h1 {
+    text-align: center;
+    padding-top: 1.6rem;
+    font-family: 'Pinyon Script', serif;
+    font-size: 4.2rem;
+}
+header p {
+    text-align: center;
+    padding: 0.6rem 0;
+}
+nav ul li {
+    text-align: center;
+    list-style-position: inside;
+}
+nav {
+    padding-bottom: 1rem;
+}
+a {
+    text-decoration: none;
+}
+nav a {
+    color: var(--light-brown);
+    font-family: 'Charm', serif;
+    font-size: 1.6rem;
+}
+h1, header p, a {
+    text-shadow: 0.2rem 0.2rem 0.2rem var(--dark-brown);
+}
+main a {
+    text-shadow: none;
+    text-decoration: underline;
+    color: var(--dark-brown);
+}
+nav {
+    text-align: center;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+figcaption {
+    background: linear-gradient(45deg, var(--dark-brown), var(--medium-brown));
+    color: var(--light-brown);
+    text-align: center;
+    padding: 1rem 0;
+    text-shadow: 0.2rem 0.2rem 0.2rem var(--dark-brown);
+
+}
+#caption {
+    width: 90%;
+    margin: 0 auto;
+}
+main {
+
+    color: var(--dark-brown);
+
+}
+h2 {
+    text-align: center;
+    font-family: 'Charm', serif;
+    font-size: 2.8rem;
+    padding: 1rem 0;
+    text-shadow: 0.2rem 0.2rem 0.2rem var(--medium-brown);
+}
+h3 {
+    width: 80%;
+    margin: 1.6rem auto;
+    font-size: 2.2rem;
+    font-style: italic;
+    text-shadow: 0.2rem 0.2rem 0.2rem var(--medium-brown);
+}
+section p {
+    width: 80%;
+    margin: 2rem auto;
+}
+section p, section li, footer {
+    font-size: 1.8rem;
+}
+section ul {
+    width: 80%;
+    margin: 0 auto;
+}
+footer {
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem 0;
+}
+#bio {
+    padding-top: 3rem;
+}
+main {
+    background: none;
+}
+img {
+    max-width: 1361px;
+    margin: 0 auto;
+}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#references ul li {
+    margin-bottom: 2rem;
+}
+.grow { 
+    transition: all .2s ease-in-out; 
+    }
+    
+.grow:hover { 
+    transform: scale(1.1); 
+    }
+ol li {
+    display: list-item;
+    width: 70%;
+    margin: 0 auto;
+}
+#electrolysis-figure {
+    max-width: 200px;
+}
+#faradays-law {
+    max-width: 150px;
+}
+#ref-link {
+    color: var(--dark-brown);
+    text-shadow: none;
+    text-decoration: underline;
+}
+#stoic-calc-big {
+    display: none;
+}
+#stoic-calc-small {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+#reduction-reaction {
+    font-family: serif;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+#paramagnetism {
+    max-width: 100px;   
+}
+#diamagnetism {
+    max-width: 200px;
+}
+#electromagnetic-induction {
+    max-width: 200px;
+}
+/*
+-----------------------------------------------------
+big screens-----------------------------------------
+-----------------------------------------------------
+*/
+
+@media screen and (min-width: 600px) {
+    #stoic-calc-small {
+        display: none;
+    }
+    #stoic-calc-big {
+        display: block;
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+    #title-and-nav {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        align-items: center;
+    }
+    header {
+        padding: 1rem 0;
+    }
+    nav ul {
+        justify-content: right;
+    }
+    h1, header p {
+        text-align: left;
+        padding-left: 2rem;
+    }
+    #electrolysis-figure {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    #paramagnetism {
+        max-width: 200px;   
+    }
+    #diamagnetism {
+        max-width: 400px;
+    }
+    #electromagnetic-induction {
+        max-width: 400px;
+    }
+}
+@media screen and (min-width: 1000px) {
+    h1 {
+        font-size: 5.2rem;        
+    }
+    header p {
+        font-size: 2.4rem;
+    }
+    nav a {
+        font-size: 2.4rem;
+    }
+}
+
